@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/styles/styles.css">
+    </head>
+    
+    <body>
+        <div class="header">
+            <div class="container">
+                <h1 class="header__title">Todo</h1>
+                <h2 class="header__subtitle">What todo?</h2>
+            </div>
+        </div>
+
+        <div class="actions">
+            <div class="actions__container">
+                    <input class="input" id='search-text' type='text' placeholder='filter todos'>
+                    <label class="checkbox">
+                        Hide completed todos: <input id="hide-completed" type="checkbox">
+                    </label>
+            </div>
+        </div>
+
+        <h2 id='summary'></h2>
+
+
+        <div class="container">
+                <div id='todos'></div>
+                <form id='add-todo-form'>
+                    <input class= "input" type='text' placeholder='Todo' name='todoText'>
+                    <button class="button">Add Todo</button>
+                </form>
+        </div>
+
+
+        <script src='/scripts/uuidv4.js'></script>
+        <script src='/scripts/todo-functions.js'></script>
+        <script src='/scripts/todo-app.js'></script>
+
+ 
+        
+
+    </body>
+</html>
